@@ -7,10 +7,10 @@ test('learning progress, bookmarks, deep links, filters and theme',async({page})
  await page.getByRole('button',{name:'Mark complete',exact:true}).click();await page.getByRole('button',{name:'Save lesson'}).click();await page.reload();
  await expect(page.getByRole('button',{name:'✓ Completed — undo'})).toBeVisible();await expect(page.getByRole('button',{name:'★ Saved'})).toBeVisible();
  await page.goto(base+'saved/');await expect(page.getByRole('link',{name:/What does an FDE do/}).first()).toBeVisible();
- await page.goto(base+'curriculum/');await page.getByRole('searchbox',{name:'Search lessons'}).fill('retrieval');await expect(page.getByRole('link',{name:/Retrieval-augmented generation/})).toBeVisible();
+ await page.goto(base+'curriculum/');await page.getByRole('searchbox',{name:'Search lessons'}).fill('retrieval');await expect(page.locator('a[href$="/curriculum/retrieval-augmented-generation/"]')).toBeVisible();
  await page.getByRole('searchbox',{name:'Search lessons'}).fill('zz-no-match');await expect(page.getByRole('heading',{name:'No matching lessons'})).toBeVisible();
  await page.goto(base+'#/lesson/01-01');await expect(page.getByRole('heading',{name:'What does an FDE do?',level:1})).toBeVisible();await expect(page).toHaveURL(/curriculum\/what-does-an-fde-do\/$/);
- await page.getByRole('button',{name:'Toggle theme'}).click();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
+ await page.getByRole('button',{name:/Toggle theme/}).click();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
 });
 test('search keyboard navigation and skip link',async({page})=>{
  await page.goto(base);await page.getByRole('link',{name:'Skip to content'}).focus();await page.keyboard.press('Enter');await expect(page.locator('main')).toBeFocused();await expect(page).toHaveURL(base);
