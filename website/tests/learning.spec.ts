@@ -48,3 +48,13 @@ test('homepage hero starts near header and aligns with learning workspace',async
  await page.setViewportSize({width:375,height:812});await page.goto(base);
  const mobileGap=await page.evaluate(()=>document.querySelector('.hero h1')!.getBoundingClientRect().top-document.querySelector('header')!.getBoundingClientRect().bottom);expect(mobileGap).toBeLessThanOrEqual(90);
 });
+
+test('interactive motion responds to hover, focus and reduced motion',async({page})=>{
+ await page.setViewportSize({width:1440,height:900});await page.goto(base);
+ const cta=page.getByRole('link',{name:'Start the learning path'});
+ await cta.hover();await expect.poll(()=>cta.evaluate(el=>getComputedStyle(el).transform)).not.toBe('none');
+ await page.mouse.move(0,0);await cta.focus();await expect(cta).toBeFocused();
+ const card=page.locator('.project-grid .card').first();await card.hover();await expect.poll(()=>card.evaluate(el=>getComputedStyle(el).transform)).not.toBe('none');
+ await page.emulateMedia({reducedMotion:'reduce'});await cta.hover();await expect.poll(()=>cta.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
+ await card.hover();await expect.poll(()=>card.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
+});

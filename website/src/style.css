@@ -12,3 +12,25 @@
 
 /* Community funding: brand-aligned panel, recognizable platform buttons. */
 .support-section{max-width:1200px;margin:0 auto;padding:0 var(--gutter) var(--s7)}.support-card{display:flex;align-items:center;justify-content:space-between;gap:var(--s5);padding:clamp(20px,4vw,40px);border:1px solid var(--color-border);border-radius:var(--radius-feature);background:linear-gradient(110deg,var(--color-surface-elevated),var(--color-surface) 76%);box-shadow:var(--shadow-subtle)}.support-copy{min-width:0;max-width:65ch}.support-kicker{display:flex;align-items:center;gap:8px;text-transform:uppercase}.support-kicker svg{width:18px;height:18px;flex:none}.support-copy h2{margin-bottom:var(--s3);font-size:clamp(1.35rem,2.4vw,1.9rem)}.support-copy p{margin:0;font-size:1rem}.support-actions{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center;flex-shrink:0}.support-actions .button{min-height:48px;padding:12px 18px;font-size:.95rem;gap:10px;border-radius:10px}.support-actions svg{width:21px;height:21px;flex:none}.support-coffee,.support-coffee:visited{background:#FFDD00;color:#181500;border-color:#D1B400}.support-coffee:hover{background:#F2C900;color:#181500}.support-sponsor,.support-sponsor:visited{background:#24212C;color:#FFFFFF;border-color:#666071}.support-sponsor:hover{background:#3B3448;color:#FFFFFF}.support-heart{color:#F9A8D4;font-size:1.25rem;line-height:1}.support-actions .button:focus-visible{outline:3px solid var(--color-focus);outline-offset:4px}@media(max-width:1023px){.support-card{align-items:flex-start;flex-direction:column}.support-actions{flex-shrink:1}}@media(max-width:479px){.support-actions{width:100%;display:grid;grid-template-columns:minmax(0,1fr)}.support-actions .button{width:100%}}
+
+/* Interaction polish: restrained, responsive motion with accessible alternatives. */
+.button,.track-card,.card:has(a,button),.pager a,.journey-map a,.phase-overview a,.lesson-list a,.home-route a,.desktop-nav a,.mobile-drawer nav a,.search-results button,.phase-accordion summary,.accordion summary,.learning-sidebar li a{transition:background-color var(--motion-fast) var(--motion-ease),color var(--motion-fast) var(--motion-ease),border-color var(--motion-fast) var(--motion-ease),box-shadow var(--motion-medium) var(--motion-ease),transform var(--motion-medium) var(--motion-ease)}
+.button:not(:disabled):active,.track-card:not(:disabled):active{transform:scale(.98)}
+.card:has(a,button):focus-within,.track-card:focus-visible,.pager a:focus-visible{border-color:var(--color-primary);box-shadow:var(--shadow-interactive)}
+.phase-overview a>span:last-child,.lesson-list .arrow,.home-route .route-dot,.journey-map .route-dot,.support-actions svg{transition:transform var(--motion-medium) var(--motion-ease),border-color var(--motion-fast) var(--motion-ease),background-color var(--motion-fast) var(--motion-ease)}
+.phase-accordion summary::after,.accordion summary::after{transition:transform var(--motion-medium) var(--motion-ease),color var(--motion-fast) var(--motion-ease)}
+.phase-accordion[open] summary::after,.accordion[open] summary::after{transform:rotate(180deg)}
+@media(hover:hover) and (pointer:fine){
+ .button:not(:disabled):hover{transform:translateY(-2px);box-shadow:var(--shadow-interactive)}
+ .button.primary:hover{box-shadow:var(--shadow-cta)}
+ .button.secondary:hover,.button.ghost:hover{border-color:var(--color-primary)}
+ .button:not(:disabled):active{transform:translateY(0) scale(.98);box-shadow:none}
+ .card:has(a,button):hover,.track-card:hover,.pager a:hover{transform:translateY(-4px);border-color:var(--color-primary);box-shadow:var(--shadow-interactive)}
+ .phase-overview a:hover>span:last-child,.lesson-list a:hover .arrow{transform:translateX(4px)}
+ .home-route a:hover .route-dot,.journey-map a:hover .route-dot{transform:scale(1.1);border-color:var(--color-primary);background:var(--color-surface-elevated)}
+ .desktop-nav a:hover,.mobile-drawer nav a:hover,.learning-sidebar li a:hover{background:var(--color-surface-elevated);color:var(--color-primary)}
+ .support-actions .button:hover svg{transform:rotate(-7deg) scale(1.08)}
+ .phase-accordion summary:hover::after,.accordion summary:hover::after{color:var(--color-primary)}
+}
+/* Keep all visual state feedback, without motion, for reduced-motion users. */
+@media(prefers-reduced-motion:reduce){.button,.track-card,.card:has(a,button),.pager a,.phase-overview a>span:last-child,.lesson-list .arrow,.home-route .route-dot,.journey-map .route-dot,.support-actions svg,.phase-accordion summary::after,.accordion summary::after{transform:none!important;transition:none!important}.button:hover,.track-card:hover,.card:has(a,button):hover,.pager a:hover{transform:none!important}}
