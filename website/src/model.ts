@@ -1,6 +1,7 @@
 import lessons from './catalog.json';
 import projects from './projects.json';
 import extras from './content.generated.json';
+import {modules,referenceSources} from './journey-data';
 export {lessons,projects,extras};
 export type Lesson=typeof lessons[number];
 export type Project=typeof projects[number];
@@ -20,7 +21,7 @@ export const paths=[
 {id:'practitioner',title:'FDE Practitioner',length:'21 days',level:'Core curriculum',description:'Follow all 60 lessons, from discovery through a customer-ready capstone.',days:21},
 {id:'accelerator',title:'FDE Accelerator',length:'30 days',level:'Working engineer',description:'Use the core curriculum and reserve nine additional days for independent project practice.',days:21}
 ];
-export const nav=[['/start/','Start here'],['/curriculum/','Curriculum'],['/projects/','Projects'],['/practice/','Practice'],['/resources/','Resources'],['/about/','About']] as const;
+export const nav=[['/start/','Start here'],['/journey/','Journey'],['/curriculum/','Curriculum'],['/projects/','Projects'],['/practice/','Practice'],['/resources/','Resources'],['/about/','About']] as const;
 export const normalize=(p:string)=>p==='/'?p:p.replace(/\/+$/,'')+'/';
 export const legacyRoute=(hash:string):string|null=>{
   const route=hash.replace(/^#/,'').split('?')[0];
@@ -33,6 +34,10 @@ const entry=(path:string,title:string,description:string,type:Meta['type']='webs
 export const routeMetadata:Meta[]=[
 entry('/','Zero to FDE','A practical, production-focused field guide for becoming a Forward Deployed Engineer.'),
 entry('/start/','Start your FDE learning path','Choose a learning path based on your experience and goals.'),
+entry('/journey/','Your FDE journey','Choose an experience track, build six evidence milestones and continue your next lesson.'),
+entry('/journey/diagnostic/','FDE skill diagnostic','Ten practice scenarios across five competencies.'),
+entry('/journey/pro/','Professional FDE depth','Twelve applied modules with worked examples and evidence checkpoints.'),
+entry('/journey/field-lab/','FDE field lab','Customer judgment, timeboxed decomposition and interview stories.'),
 entry('/curriculum/','FDE curriculum','Explore 12 phases and 60 practical lessons, with exercises and checkpoints.'),
 entry('/projects/','Portfolio projects','Seven synthetic customer engagements with runnable offline baselines.'),
 entry('/practice/','Field drills and practice','Practise existing exercises, quizzes and customer delivery scenarios.'),
@@ -46,6 +51,8 @@ entry('/saved/','Your learning workspace','Return to saved and recently viewed l
 ];
 export const metadata=(path:string)=>routeMetadata.find(x=>x.path===normalize(path))??routeMetadata[routeMetadata.length-1];
 export const searchItems=[
+...modules.map((m,i)=>({title:m.title,detail:'Professional depth · '+m.category,text:m.concept+' '+m.example+' '+m.exercise,href:'/journey/pro/#pro-'+(i+1),group:'Professional depth'})),
+...referenceSources.map(s=>({title:s.name,detail:'Independent curriculum reference',text:s.detail,href:s.url,group:'Resources'})),
 ...lessons.map(l=>({title:l.title,detail:l.phaseTitle,text:l.lesson+' '+l.prerequisites+' '+l.project,href:lessonUrl(l),group:'Lessons'})),
 ...projects.map(p=>({title:p.title,detail:p.problem,text:p.build+' '+p.metrics,href:projectUrl(p),group:'Projects'})),
 ...resources.map(([name,category,href])=>({title:name,detail:category,text:'Official documentation '+name,href,group:'Resources'})),
