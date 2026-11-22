@@ -1,4 +1,4 @@
-# REST integrations
+# 📘 REST integrations
 
 Day 10 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

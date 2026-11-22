@@ -1,4 +1,4 @@
-# Practice: Map a business workflow
+# 🧪 Practice: Map a business workflow
 
 A supplier submits incomplete documents.
 
@@ -6,8 +6,8 @@ A supplier submits incomplete documents.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A current-state diagram.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

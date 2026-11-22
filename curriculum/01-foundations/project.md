@@ -1,8 +1,8 @@
-# Mini-project: Customer issue triage
+# 🛠️ Mini-project: Customer issue triage
 
 Use the five lesson deliverables in this phase. Combine them into a single README with a customer brief, steps, evidence, limitations, and next decision.
 
-## Acceptance
+## ✅ Acceptance
 - A Git log containing one meaningful commit.
 - A count dictionary and two passing assertions.
 - Invalid records are rejected with a clear message.

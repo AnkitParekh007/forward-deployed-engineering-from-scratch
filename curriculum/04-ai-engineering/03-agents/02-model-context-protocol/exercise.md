@@ -1,4 +1,4 @@
-# Practice: Model Context Protocol
+# 🧪 Practice: Model Context Protocol
 
 A company wants reusable internal search.
 
@@ -6,8 +6,8 @@ A company wants reusable internal search.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 An interface sketch with permissions.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

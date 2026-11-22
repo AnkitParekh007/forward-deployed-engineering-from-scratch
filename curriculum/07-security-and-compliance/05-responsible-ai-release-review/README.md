@@ -1,4 +1,4 @@
-# Responsible AI release review
+# 📘 Responsible AI release review
 
 Day 18 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,4 +1,4 @@
-# Automation reliability
+# 📘 Automation reliability
 
 Day 14 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

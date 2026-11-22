@@ -1,4 +1,4 @@
-# Cost and ROI
+# 📘 Cost and ROI
 
 Day 19 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

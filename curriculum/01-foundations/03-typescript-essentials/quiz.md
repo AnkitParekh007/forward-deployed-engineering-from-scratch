@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Does TypeScript validate JSON at runtime?
 2. What evidence would show your exercise works?

@@ -1,4 +1,4 @@
-# Testing and error handling
+# 📘 Testing and error handling
 
 Day 5 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

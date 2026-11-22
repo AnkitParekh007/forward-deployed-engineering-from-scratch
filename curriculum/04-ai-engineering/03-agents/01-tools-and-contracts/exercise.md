@@ -1,4 +1,4 @@
-# Practice: Tools and contracts
+# 🧪 Practice: Tools and contracts
 
 An assistant checks synthetic order status.
 
@@ -6,8 +6,8 @@ An assistant checks synthetic order status.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Schema, successful lookup and error case.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

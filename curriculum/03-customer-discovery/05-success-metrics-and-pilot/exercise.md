@@ -1,4 +1,4 @@
-# Practice: Success metrics and pilot
+# 🧪 Practice: Success metrics and pilot
 
 A support assistant proposes categories.
 
@@ -6,8 +6,8 @@ A support assistant proposes categories.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A pilot scorecard with denominators.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

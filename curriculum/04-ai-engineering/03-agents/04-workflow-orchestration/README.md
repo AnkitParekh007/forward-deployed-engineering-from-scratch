@@ -1,4 +1,4 @@
-# Workflow orchestration
+# 📘 Workflow orchestration
 
 Day 14 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,4 +1,4 @@
-# Practice: Data privacy and minimization
+# 🧪 Practice: Data privacy and minimization
 
 A support export includes personal contact details.
 
@@ -6,8 +6,8 @@ A support export includes personal contact details.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A before/after data inventory.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

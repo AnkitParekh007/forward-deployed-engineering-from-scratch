@@ -1,4 +1,4 @@
-# Files, terminals and Git
+# 📘 Files, terminals and Git
 
 Day 2 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

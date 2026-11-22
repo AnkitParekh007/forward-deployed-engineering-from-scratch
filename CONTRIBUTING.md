@@ -1,3 +1,3 @@
-# Contributing
+# 🤝 Contributing
 
 Open an issue describing the learner need, scope and expected evidence. Make a focused branch and PR. For curriculum changes, edit the editorial source in `curriculum/build_curriculum.py` or `build_projects.py`, regenerate the Markdown and JSON, and review the diff. Keep examples original, synthetic, provider-neutral, and accessible. Include tests or reproducible checks, answer keys and references. Do not submit credentials, private customer material, unsupported claims, or harmful instructions. Run starter checks and the website build. Reviewers assess clarity, correctness, accessibility and evidence. All contributions are under MIT.

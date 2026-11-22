@@ -1,4 +1,4 @@
-# Practice: Evaluate an LLM application
+# 🧪 Practice: Evaluate an LLM application
 
 A support assistant flags urgent cases.
 
@@ -6,8 +6,8 @@ A support assistant flags urgent cases.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Precision 0.8 and recall 0.667.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

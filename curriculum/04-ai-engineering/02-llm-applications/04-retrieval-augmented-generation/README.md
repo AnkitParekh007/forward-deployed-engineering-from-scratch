@@ -1,4 +1,4 @@
-# Retrieval-augmented generation
+# 📘 Retrieval-augmented generation
 
 Day 12 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

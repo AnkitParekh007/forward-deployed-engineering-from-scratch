@@ -1,4 +1,4 @@
-# Practice: Authentication and authorization
+# 🧪 Practice: Authentication and authorization
 
 Two customer accounts share an application.
 
@@ -6,8 +6,8 @@ Two customer accounts share an application.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Denied cross-account access test.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

@@ -1,4 +1,4 @@
-# Embeddings and similarity
+# 📘 Embeddings and similarity
 
 Day 12 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

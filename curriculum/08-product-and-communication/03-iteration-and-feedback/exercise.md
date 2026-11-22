@@ -1,4 +1,4 @@
-# Practice: Iteration and feedback
+# 🧪 Practice: Iteration and feedback
 
 Users report that categories are confusing.
 
@@ -6,8 +6,8 @@ Users report that categories are confusing.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A feedback-to-change decision record.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

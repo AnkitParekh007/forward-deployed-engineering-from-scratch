@@ -1,4 +1,4 @@
-# Practice: Automation reliability
+# 🧪 Practice: Automation reliability
 
 A mock CRM task creation fails temporarily.
 
@@ -6,8 +6,8 @@ A mock CRM task creation fails temporarily.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Bounded retry and a manual review record.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

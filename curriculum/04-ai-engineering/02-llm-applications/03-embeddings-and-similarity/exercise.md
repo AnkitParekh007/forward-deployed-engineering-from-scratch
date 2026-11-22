@@ -1,4 +1,4 @@
-# Practice: Embeddings and similarity
+# 🧪 Practice: Embeddings and similarity
 
 A support user searches for refund rules.
 
@@ -6,8 +6,8 @@ A support user searches for refund rules.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 The first pair ranks above the orthogonal pair.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

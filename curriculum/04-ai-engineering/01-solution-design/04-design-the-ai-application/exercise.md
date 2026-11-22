@@ -1,4 +1,4 @@
-# Practice: Design the AI application
+# 🧪 Practice: Design the AI application
 
 A feedback analyzer categorizes comments.
 
@@ -6,8 +6,8 @@ A feedback analyzer categorizes comments.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A component diagram with responsibilities.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

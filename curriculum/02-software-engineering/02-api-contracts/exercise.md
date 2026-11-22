@@ -1,4 +1,4 @@
-# Practice: API contracts
+# 🧪 Practice: API contracts
 
 An onboarding app receives customer records.
 
@@ -6,8 +6,8 @@ An onboarding app receives customer records.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A valid request and a rejected invalid request.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

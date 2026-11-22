@@ -1,4 +1,4 @@
-# Practice: Handoff and customer onboarding
+# 🧪 Practice: Handoff and customer onboarding
 
 A customer team takes over a pilot.
 
@@ -6,8 +6,8 @@ A customer team takes over a pilot.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A checklist another learner can follow.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

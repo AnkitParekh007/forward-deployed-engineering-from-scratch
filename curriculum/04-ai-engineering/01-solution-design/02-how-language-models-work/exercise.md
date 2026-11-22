@@ -1,4 +1,4 @@
-# Practice: How language models work
+# 🧪 Practice: How language models work
 
 A policy assistant invents a policy number.
 
@@ -6,8 +6,8 @@ A policy assistant invents a policy number.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Two outputs with a groundedness check.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

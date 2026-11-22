@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Where should authorization be enforced?
 2. What evidence would show your exercise works?

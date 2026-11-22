@@ -1,4 +1,4 @@
-# Database design and queries
+# 📘 Database design and queries
 
 Day 10 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

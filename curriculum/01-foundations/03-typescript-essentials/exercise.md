@@ -1,4 +1,4 @@
-# Practice: TypeScript essentials
+# 🧪 Practice: TypeScript essentials
 
 A CRM returns inconsistent fields.
 
@@ -6,8 +6,8 @@ A CRM returns inconsistent fields.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Invalid records are rejected with a clear message.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

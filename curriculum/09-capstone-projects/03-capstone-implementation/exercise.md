@@ -1,4 +1,4 @@
-# Practice: Capstone implementation
+# 🧪 Practice: Capstone implementation
 
 A stakeholder wants a live prototype by Friday.
 
@@ -6,8 +6,8 @@ A stakeholder wants a live prototype by Friday.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Runnable source, README and tests.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

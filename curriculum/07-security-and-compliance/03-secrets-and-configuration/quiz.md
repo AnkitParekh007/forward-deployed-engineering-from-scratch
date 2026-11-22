@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Can a Vite public env variable contain a secret?
 2. What evidence would show your exercise works?

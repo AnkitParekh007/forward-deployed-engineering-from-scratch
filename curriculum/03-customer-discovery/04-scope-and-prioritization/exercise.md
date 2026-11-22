@@ -1,4 +1,4 @@
-# Practice: Scope and prioritization
+# 🧪 Practice: Scope and prioritization
 
 A client wants ten integrations.
 
@@ -6,8 +6,8 @@ A client wants ten integrations.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A rationale and excluded features.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

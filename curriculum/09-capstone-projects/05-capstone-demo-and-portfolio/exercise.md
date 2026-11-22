@@ -1,4 +1,4 @@
-# Practice: Capstone demo and portfolio
+# 🧪 Practice: Capstone demo and portfolio
 
 An interviewer wants proof of FDE thinking.
 
@@ -6,8 +6,8 @@ An interviewer wants proof of FDE thinking.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A portfolio link and three improvement ideas.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

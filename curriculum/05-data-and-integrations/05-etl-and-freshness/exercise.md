@@ -1,4 +1,4 @@
-# Practice: ETL and freshness
+# 🧪 Practice: ETL and freshness
 
 A knowledge base changes daily.
 
@@ -6,8 +6,8 @@ A knowledge base changes daily.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Input counts, output and timestamp.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

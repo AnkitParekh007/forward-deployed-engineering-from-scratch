@@ -1,4 +1,4 @@
-# ETL and freshness
+# 📘 ETL and freshness
 
 Day 11 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

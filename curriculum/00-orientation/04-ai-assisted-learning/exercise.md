@@ -1,4 +1,4 @@
-# Practice: AI-assisted learning
+# 🧪 Practice: AI-assisted learning
 
 A graduate inherits a generated prototype.
 
@@ -6,8 +6,8 @@ A graduate inherits a generated prototype.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Three recorded input-output checks.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

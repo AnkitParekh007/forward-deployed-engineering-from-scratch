@@ -1,4 +1,4 @@
-# Practice: Start with outcomes
+# 🧪 Practice: Start with outcomes
 
 A support team waits 12 minutes per ticket.
 
@@ -6,8 +6,8 @@ A support team waits 12 minutes per ticket.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A metric with units and a target.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

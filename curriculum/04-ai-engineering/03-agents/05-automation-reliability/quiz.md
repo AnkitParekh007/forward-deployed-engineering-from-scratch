@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. What should permanent failures do?
 2. What evidence would show your exercise works?

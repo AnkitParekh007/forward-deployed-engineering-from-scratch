@@ -1,4 +1,4 @@
-# Practice: Webhooks and idempotency
+# 🧪 Practice: Webhooks and idempotency
 
 A customer-created event is delivered twice.
 
@@ -6,8 +6,8 @@ A customer-created event is delivered twice.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Exactly one created task.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

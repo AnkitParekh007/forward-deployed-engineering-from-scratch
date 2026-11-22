@@ -1,4 +1,4 @@
-# Practice: Discovery interviews
+# 🧪 Practice: Discovery interviews
 
 A logistics manager says shipments are slow.
 
@@ -6,8 +6,8 @@ A logistics manager says shipments are slow.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A workflow discovery note.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

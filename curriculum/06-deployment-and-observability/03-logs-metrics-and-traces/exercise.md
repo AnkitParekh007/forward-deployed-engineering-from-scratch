@@ -1,4 +1,4 @@
-# Practice: Logs, metrics and traces
+# 🧪 Practice: Logs, metrics and traces
 
 A customer reports a slow response.
 
@@ -6,8 +6,8 @@ A customer reports a slow response.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Three correlated events and a latency summary.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

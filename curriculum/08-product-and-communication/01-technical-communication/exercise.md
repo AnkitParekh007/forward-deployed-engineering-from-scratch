@@ -1,4 +1,4 @@
-# Practice: Technical communication
+# 🧪 Practice: Technical communication
 
 A stakeholder asks why RAG answers sometimes abstain.
 
@@ -6,8 +6,8 @@ A stakeholder asks why RAG answers sometimes abstain.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Two audience-specific messages.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

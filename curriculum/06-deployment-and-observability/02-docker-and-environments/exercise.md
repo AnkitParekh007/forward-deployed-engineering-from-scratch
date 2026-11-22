@@ -1,4 +1,4 @@
-# Practice: Docker and environments
+# 🧪 Practice: Docker and environments
 
 Two developers see different runtime behavior.
 
@@ -6,8 +6,8 @@ Two developers see different runtime behavior.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A reproducible run command.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

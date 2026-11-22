@@ -1,4 +1,4 @@
-# Practice: When to use AI
+# 🧪 Practice: When to use AI
 
 A finance team routes invoice records.
 
@@ -6,8 +6,8 @@ A finance team routes invoice records.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A baseline comparison table.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

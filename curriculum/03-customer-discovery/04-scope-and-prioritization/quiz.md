@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Why favor a reversible experiment?
 2. What evidence would show your exercise works?

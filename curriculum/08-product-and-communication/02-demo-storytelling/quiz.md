@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Why show a failure path?
 2. What evidence would show your exercise works?

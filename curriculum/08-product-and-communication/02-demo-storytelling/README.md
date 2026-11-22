@@ -1,4 +1,4 @@
-# Demo storytelling
+# 📘 Demo storytelling
 
 Day 18 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

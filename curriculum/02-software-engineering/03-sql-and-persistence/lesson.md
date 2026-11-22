@@ -1,39 +1,39 @@
 # SQL and persistence
 
-## Why this matters
+## 💡 Why this matters
 A team tracks customer tasks.
 
-## Learning objectives
+## 🎯 Learning objectives
 - Explain sql and persistence in your own words.
 - Apply the concept to the customer scenario.
 - Produce and independently verify the requested evidence.
 
-## Prerequisites
+## 🧰 Prerequisites
 Complete lesson 03-02: API contracts; use synthetic data.
 
-## Concepts
+## 🧠 Concepts
 Tables store rows; primary keys identify them and foreign keys express relationships. Parameterized queries separate values from SQL.
 
-## Build it
+## 🛠️ Build it
 1. Read the scenario and identify the input and expected output.
 2. Create a SQLite database with customers and tasks and run a parameterized lookup.
 3. Verify the result using the success evidence below.
 
-## Real-world scenario
+## 🌐 Real-world scenario
 A team tracks customer tasks. An FDE documents assumptions, tests the smallest useful change and reviews the outcome with the workflow owner.
 
-## Common mistakes
+## ⚠️ Common mistakes
 - Treating a generated result as verified evidence. Check it independently.
 - Using real customer data in a learning demo. Use synthetic records.
 - Hiding missing evidence. Document limitations and ask for review.
 
-## Checkpoint
+## 🧪 Checkpoint
 1. Why use parameters?
 2. What evidence would show your exercise works?
 3. What should you do if the evidence fails?
 
-## Deliverable
+## 📦 Deliverable
 A reproducible query and result.
 
-## Further reading
+## 📚 Further reading
 - [Reference](https://www.postgresql.org/docs/current/tutorial.html)

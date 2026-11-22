@@ -1,4 +1,4 @@
-# Practice: Cost and ROI
+# 🧪 Practice: Cost and ROI
 
 A team hopes to save five minutes per ticket.
 
@@ -6,8 +6,8 @@ A team hopes to save five minutes per ticket.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A transparent cost model with units.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

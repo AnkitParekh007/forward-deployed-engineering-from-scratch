@@ -1,4 +1,4 @@
-# Practice: Python essentials
+# 🧪 Practice: Python essentials
 
 A support queue needs counts by category.
 
@@ -6,8 +6,8 @@ A support queue needs counts by category.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A count dictionary and two passing assertions.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

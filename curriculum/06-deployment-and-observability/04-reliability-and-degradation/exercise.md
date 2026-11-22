@@ -1,4 +1,4 @@
-# Practice: Reliability and degradation
+# 🧪 Practice: Reliability and degradation
 
 A knowledge service becomes unavailable.
 
@@ -6,8 +6,8 @@ A knowledge service becomes unavailable.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A failure test and documented fallback.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

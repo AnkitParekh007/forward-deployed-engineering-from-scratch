@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. What is the denominator of success rate?
 2. What evidence would show your exercise works?

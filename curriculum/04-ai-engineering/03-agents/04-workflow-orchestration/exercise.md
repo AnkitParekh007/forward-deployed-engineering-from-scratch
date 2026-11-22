@@ -1,4 +1,4 @@
-# Practice: Workflow orchestration
+# 🧪 Practice: Workflow orchestration
 
 A checklist must be reviewed before onboarding begins.
 
@@ -6,8 +6,8 @@ A checklist must be reviewed before onboarding begins.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A trace rejecting an invalid transition.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

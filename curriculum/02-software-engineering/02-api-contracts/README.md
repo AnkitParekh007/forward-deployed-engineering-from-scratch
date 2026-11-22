@@ -1,4 +1,4 @@
-# API contracts
+# 📘 API contracts
 
 Day 4 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

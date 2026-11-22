@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. What links related log events?
 2. What evidence would show your exercise works?

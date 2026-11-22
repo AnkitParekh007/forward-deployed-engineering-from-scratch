@@ -1,4 +1,4 @@
-# Prompt instructions and context
+# 📘 Prompt instructions and context
 
 Day 11 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

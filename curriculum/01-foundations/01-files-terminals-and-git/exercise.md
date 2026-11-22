@@ -1,4 +1,4 @@
-# Practice: Files, terminals and Git
+# 🧪 Practice: Files, terminals and Git
 
 Two teammates edit an onboarding prototype.
 
@@ -6,8 +6,8 @@ Two teammates edit an onboarding prototype.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A Git log containing one meaningful commit.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

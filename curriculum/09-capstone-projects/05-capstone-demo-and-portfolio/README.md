@@ -1,4 +1,4 @@
-# Capstone demo and portfolio
+# 📘 Capstone demo and portfolio
 
 Day 21 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

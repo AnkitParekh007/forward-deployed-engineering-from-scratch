@@ -1,4 +1,4 @@
-# Practice: Requirements under ambiguity
+# 🧪 Practice: Requirements under ambiguity
 
 A customer says make onboarding faster.
 
@@ -6,8 +6,8 @@ A customer says make onboarding faster.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Criteria with measurable pass/fail conditions.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

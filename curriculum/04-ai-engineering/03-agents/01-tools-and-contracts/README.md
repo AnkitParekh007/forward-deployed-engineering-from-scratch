@@ -1,4 +1,4 @@
-# Tools and contracts
+# 📘 Tools and contracts
 
 Day 13 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,8 +1,8 @@
-# Mini-project: Production incident copilot
+# 🛠️ Mini-project: Production incident copilot
 
 Use the five lesson deliverables in this phase. Combine them into a single README with a customer brief, steps, evidence, limitations, and next decision.
 
-## Acceptance
+## ✅ Acceptance
 - A local build and deployment checklist.
 - A reproducible run command.
 - Three correlated events and a latency summary.
