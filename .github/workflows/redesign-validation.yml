@@ -1,0 +1,56 @@
+name: Redesign validation
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Curriculum integrity
+        run: |
+          python curriculum/build_curriculum.py
+          python curriculum/build_projects.py
+          python curriculum/assets/starter.py
+          python curriculum/assets/field_lab.py
+          git diff --exit-code
+      - name: Build and unit tests
+        working-directory: website
+        run: |
+          npm ci
+          npm test
+          npm run build
+      - name: Browser acceptance tests
+        working-directory: website
+        run: |
+          npx playwright install --with-deps chromium
+          npm run test:e2e
+      - name: Lighthouse reports
+        working-directory: website
+        run: |
+          mkdir -p audit-reports
+          npm run preview -- --host 127.0.0.1 > /tmp/fde-preview.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          base=http://127.0.0.1:4173/forward-deployed-engineering-from-scratch/
+          for attempt in $(seq 1 20); do curl -fsS "$base" > /dev/null && break; sleep 1; done
+          export CHROME_PATH=$(node -e "console.log(require('playwright').chromium.executablePath())")
+          npx lighthouse "$base" --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=audit-reports/home.json
+          npx lighthouse "${base}curriculum/what-does-an-fde-do/" --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=audit-reports/lesson.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: redesign-verification
+          path: |
+            website/dist
+            website/test-results
+            website/audit-reports
