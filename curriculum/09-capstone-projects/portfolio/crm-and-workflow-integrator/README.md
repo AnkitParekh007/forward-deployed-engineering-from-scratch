@@ -48,3 +48,7 @@ Introduce the customer problem; run a valid example, demonstrate an error or abs
 
 ## Portfolio description
 Designed and implemented a simulated crm and workflow integrator pilot, including evaluation and documented limitations. Add measured results only after completing the tests.
+
+## Runnable starter
+
+See [offline starter](code/README.md). Run `python3 code/demo.py` from the project folder. Extend this baseline; it is not a production application.

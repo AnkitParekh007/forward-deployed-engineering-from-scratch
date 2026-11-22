@@ -26,6 +26,7 @@ jobs:
           python curriculum/build_curriculum.py
           python curriculum/build_projects.py
           python curriculum/assets/starter.py
+          python curriculum/assets/field_lab.py
           git diff --exit-code
       - name: Build website
         working-directory: website
@@ -33,6 +34,11 @@ jobs:
           npm ci
           npm test
           npm run build
+      - name: Browser smoke tests
+        working-directory: website
+        run: |
+          npx playwright install --with-deps chromium
+          npm run test:e2e
       # Repository Settings → Pages → Source must be GitHub Actions.
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
