@@ -9,6 +9,9 @@ A free, original, project-based introduction to customer-facing AI engineering. 
 ## Start here
 
 - [21-day roadmap](curriculum/ROADMAP.md)
+- [Interactive FDE journey](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/journey/) — five experience tracks, six evidence milestones, and a next-action recommendation.
+- [Professional learning path](curriculum/PROFESSIONAL_PATH.md) — twelve deeper modules, self-reviewed proof artifacts and independent reference attribution.
+- [Skill diagnostic](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/journey/diagnostic/) and [field lab](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/journey/field-lab/) — scenario practice, timeboxed decomposition and interview stories.
 - [Curriculum and phase index](curriculum/README.md)
 - [Portfolio projects](curriculum/09-capstone-projects/portfolio/)
 - [Career preparation](curriculum/10-career-preparation/README.md)
@@ -37,7 +40,7 @@ For learners, start at day 1 and work through the lessons, save evidence from ea
 
 ## Deployment
 
-Enable Settings → Pages → Build and deployment → Source → GitHub Actions. The workflow builds `website/` and publishes only its `dist/` directory. Routes use hashes to work on Pages without server redirects.
+Enable Settings → Pages → Build and deployment → Source → GitHub Actions. The workflow builds `website/` and publishes only its `dist/` directory. The website uses prerendered static routes and preserves legacy hash links.
 
 Expected URL: https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/
 
