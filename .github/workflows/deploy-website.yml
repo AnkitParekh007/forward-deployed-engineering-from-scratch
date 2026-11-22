@@ -27,6 +27,7 @@ jobs:
           python curriculum/build_projects.py
           python curriculum/assets/starter.py
           python curriculum/assets/field_lab.py
+          python curriculum/assets/pro_lab.py
           git diff --exit-code
       - name: Build website
         working-directory: website
