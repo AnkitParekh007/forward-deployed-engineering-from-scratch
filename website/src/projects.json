@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Customer Issue Triage Assistant",
+    "customer": "Support manager",
+    "problem": "Route incoming tickets to the right queue",
+    "metrics": "category accuracy >= 80% on 10 labeled synthetic tickets",
+    "path": "curriculum/09-capstone-projects/portfolio/customer-issue-triage-assistant/README.md",
+    "build": "classify with explicit keyword rules; unknown cases go to review",
+    "test": "Compare predicted category to the labeled fixture; test empty input."
+  },
+  {
+    "title": "Internal Knowledge Assistant",
+    "customer": "HR operations lead",
+    "problem": "Answer questions using approved policy documents",
+    "metrics": "retrieve relevant document in top 3 for at least 8 of 10 questions",
+    "path": "curriculum/09-capstone-projects/portfolio/internal-knowledge-assistant/README.md",
+    "build": "rank passages by term overlap; surface supporting passages and abstain if none match",
+    "test": "Check relevant passage IDs and an out-of-scope question."
+  },
+  {
+    "title": "Customer Onboarding Automation",
+    "customer": "Implementation manager",
+    "problem": "Convert a customer brief into a reviewable checklist",
+    "metrics": "capture at least 8 of 10 expected requirements",
+    "path": "curriculum/09-capstone-projects/portfolio/customer-onboarding-automation/README.md",
+    "build": "extract labeled requirements and create a checklist requiring human approval",
+    "test": "Check omitted requirements and reject invalid approval transitions."
+  },
+  {
+    "title": "CRM and Workflow Integrator",
+    "customer": "Sales operations lead",
+    "problem": "Synchronize mock customer-created events to local tasks",
+    "metrics": "one task per unique event; zero duplicate tasks",
+    "path": "curriculum/09-capstone-projects/portfolio/crm-and-workflow-integrator/README.md",
+    "build": "validate events and persist unique IDs in a transaction",
+    "test": "Deliver the same event twice; verify one task exists."
+  },
+  {
+    "title": "AI-Powered Product Feedback Analyzer",
+    "customer": "Product manager",
+    "problem": "Group comments into themes with traceable evidence",
+    "metrics": "8 of 10 comments assigned to expected themes",
+    "path": "curriculum/09-capstone-projects/portfolio/ai-powered-product-feedback-analyzer/README.md",
+    "build": "group comments with deterministic categories and preserve source IDs",
+    "test": "Test mixed and unknown feedback; reconcile all counts."
+  },
+  {
+    "title": "Production Incident Copilot",
+    "customer": "Service owner",
+    "problem": "Summarize synthetic alerts and draft a status update",
+    "metrics": "all supplied impact facts cited and no invented root cause",
+    "path": "curriculum/09-capstone-projects/portfolio/production-incident-copilot/README.md",
+    "build": "sort events, summarize known facts, mark unknowns and require review",
+    "test": "Test missing events and check that uncertain claims remain labeled."
+  },
+  {
+    "title": "End-to-End Customer Solution",
+    "customer": "Customer sponsor",
+    "problem": "Deliver one integrated pilot backed by evidence",
+    "metrics": "meet declared quality target on ten fixtures and pass access tests",
+    "path": "curriculum/09-capstone-projects/portfolio/end-to-end-customer-solution/README.md",
+    "build": "combine a UI, trusted API, database, model adapter, policy and telemetry",
+    "test": "Run valid, malformed and denied access cases; test rollback."
+  }
+]
