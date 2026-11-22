@@ -3,6 +3,7 @@ import {BrowserRouter} from 'react-router-dom';
 import App from './App';
 import {BASE,legacyRoute} from './model';
 import './style.css';
+import './journey.css';
 const legacy=location.hash.startsWith('#/')?legacyRoute(location.hash):null;
 if(legacy)history.replaceState(null,'',BASE+legacy);
 const app=<BrowserRouter basename={BASE}><App/></BrowserRouter>;
