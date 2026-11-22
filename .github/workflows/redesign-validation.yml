@@ -5,6 +5,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: redesign-validation-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -29,6 +32,7 @@ jobs:
           npm ci
           npm test
           npm run build
+          python scripts/verify-static.py
       - name: Browser acceptance tests
         working-directory: website
         run: |
@@ -46,6 +50,7 @@ jobs:
           export CHROME_PATH=$(node -e "console.log(require('playwright').chromium.executablePath())")
           npx lighthouse "$base" --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=audit-reports/home.json
           npx lighthouse "${base}curriculum/what-does-an-fde-do/" --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=audit-reports/lesson.json
+          node -e "for(const file of ['home','lesson']){const r=require('./audit-reports/'+file+'.json');console.log(file,JSON.stringify(Object.fromEntries(Object.entries(r.categories).map(([key,value])=>[key,Math.round(value.score*100)]))))}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
