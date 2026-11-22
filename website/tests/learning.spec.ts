@@ -38,3 +38,23 @@ test('support card links to the maintainer and fits mobile in both themes',async
   expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
  }
 });
+
+test('homepage hero starts near header and aligns with learning workspace',async({page})=>{
+ for(const width of [1280,1440,1920]){
+  await page.setViewportSize({width,height:900});await page.goto(base);
+  const layout=await page.evaluate(()=>{const header=document.querySelector('header')!.getBoundingClientRect();const title=document.querySelector('.hero h1')!.getBoundingClientRect();const intro=document.querySelector('.hero > div:first-child')!.getBoundingClientRect();const preview=document.querySelector('.hero .field-preview')!.getBoundingClientRect();const cta=document.querySelector('.hero .actions')!.getBoundingClientRect();return {gap:title.top-header.bottom,alignment:Math.abs(intro.top-preview.top),ctaBottom:cta.bottom}});
+  expect(layout.gap).toBeLessThanOrEqual(110);expect(layout.alignment).toBeLessThanOrEqual(2);expect(layout.ctaBottom).toBeLessThanOrEqual(900);
+ }
+ await page.setViewportSize({width:375,height:812});await page.goto(base);
+ const mobileGap=await page.evaluate(()=>document.querySelector('.hero h1')!.getBoundingClientRect().top-document.querySelector('header')!.getBoundingClientRect().bottom);expect(mobileGap).toBeLessThanOrEqual(90);
+});
+
+test('interactive motion responds to hover, focus and reduced motion',async({page})=>{
+ await page.setViewportSize({width:1440,height:900});await page.goto(base);
+ const cta=page.getByRole('link',{name:'Start the learning path'});
+ await cta.hover();await expect.poll(()=>cta.evaluate(el=>getComputedStyle(el).transform)).not.toBe('none');
+ await page.mouse.move(0,0);await cta.focus();await expect(cta).toBeFocused();
+ const card=page.locator('.project-grid .card').first();await card.hover();await expect.poll(()=>card.evaluate(el=>getComputedStyle(el).transform)).not.toBe('none');
+ await page.emulateMedia({reducedMotion:'reduce'});await cta.hover();await expect.poll(()=>cta.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
+ await card.hover();await expect.poll(()=>card.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
+});
