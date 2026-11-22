@@ -1,4 +1,4 @@
-# Incident response
+# 📘 Incident response
 
 Day 16 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

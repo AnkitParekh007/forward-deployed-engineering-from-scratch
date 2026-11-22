@@ -1,4 +1,4 @@
-# Prototype before scaling
+# 📘 Prototype before scaling
 
 Day 9 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

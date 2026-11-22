@@ -15,7 +15,7 @@ export function CodeBlock({text,language='text'}:{text:string;language?:string})
 function textOf(node:ReactNode):string{return typeof node==='string'||typeof node==='number'?String(node):Array.isArray(node)?node.map(textOf).join(''):node&&typeof node==='object'&&'props' in node?textOf((node as {props:{children?:ReactNode}}).props.children):''}
 export function MarkdownBody({text,stripTitle=false,basePath}:{text:string;stripTitle?:boolean;basePath?:string}){return <div className="prose"><Markdown remarkPlugins={[remarkGfm]} components={{
 h1:({children})=><h2 id={slug(textOf(children))}>{children}</h2>,
-h2:({children})=><h2 id={slug(textOf(children))}>{children}</h2>,
+h2:({children})=>{const label=textOf(children);const icon:Record<string,string>={'Why this matters':'💡','Learning objectives':'🎯','Prerequisites':'🧰','Concepts':'🧠','Build it':'🛠️','Real-world scenario':'🌐','Common mistakes':'⚠️','Checkpoint':'🧪','Deliverable':'📦','Further reading':'📚'};return <h2 id={slug(label)}>{icon[label]&&<span aria-hidden="true">{icon[label]} </span>}{children}</h2>},
 h3:({children})=><h3 id={slug(textOf(children))}>{children}</h3>,
 pre:({children})=>{const child=Array.isArray(children)?children[0]:children;const props=child&&typeof child==='object'&&'props' in child?(child as {props:{children?:ReactNode;className?:string}}).props:{};return <CodeBlock text={textOf(props.children??children).replace(/\n$/,'')} language={props.className?.replace('language-','')||'text'}/>},
 table:({children})=><div className="table-scroll" tabIndex={0} role="region" aria-label="Scrollable table"><table>{children}</table></div>,

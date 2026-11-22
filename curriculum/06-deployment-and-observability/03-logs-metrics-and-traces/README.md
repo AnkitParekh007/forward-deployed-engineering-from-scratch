@@ -1,4 +1,4 @@
-# Logs, metrics and traces
+# 📘 Logs, metrics and traces
 
 Day 15 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,4 +1,4 @@
-# Discovery interviews
+# 📘 Discovery interviews
 
 Day 6 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

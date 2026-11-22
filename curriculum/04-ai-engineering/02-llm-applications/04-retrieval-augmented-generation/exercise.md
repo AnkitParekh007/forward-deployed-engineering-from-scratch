@@ -1,4 +1,4 @@
-# Practice: Retrieval-augmented generation
+# 🧪 Practice: Retrieval-augmented generation
 
 An employee asks about leave policy.
 
@@ -6,8 +6,8 @@ An employee asks about leave policy.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Retrieval results and one abstention case.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

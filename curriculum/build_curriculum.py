@@ -81,6 +81,9 @@ Capstone demo and portfolio|Explain customer need, architecture, results, limita
 
 def slug(s): return re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
 def write(path, content):
+    from doc_icons import decorate_markdown
+    if path.suffix == '.md':
+        content = decorate_markdown(content, lesson=path.name == 'lesson.md')
     path.parent.mkdir(parents=True,exist_ok=True); path.write_text(content+'\n',encoding='utf-8')
 
 rows=[line.split('|') for line in DATA.splitlines()]

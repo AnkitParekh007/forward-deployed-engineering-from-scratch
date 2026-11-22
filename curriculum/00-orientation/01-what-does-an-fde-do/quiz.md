@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. What distinguishes an FDE from a model researcher?
 2. What evidence would show your exercise works?

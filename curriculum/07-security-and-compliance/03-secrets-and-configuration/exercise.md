@@ -1,4 +1,4 @@
-# Practice: Secrets and configuration
+# 🧪 Practice: Secrets and configuration
 
 A prototype needs an optional model API.
 
@@ -6,8 +6,8 @@ A prototype needs an optional model API.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 An example config with placeholders only.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

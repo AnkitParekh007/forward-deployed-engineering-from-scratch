@@ -1,4 +1,4 @@
-# Practice: Incident response
+# 🧪 Practice: Incident response
 
 A demo service has elevated latency.
 
@@ -6,8 +6,8 @@ A demo service has elevated latency.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 An incident summary and action owner.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

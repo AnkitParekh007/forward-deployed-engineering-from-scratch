@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Is estimated savings the same as realized ROI?
 2. What evidence would show your exercise works?

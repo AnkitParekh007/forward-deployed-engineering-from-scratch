@@ -1,4 +1,4 @@
-# Evaluate an LLM application
+# 📘 Evaluate an LLM application
 
 Day 12 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

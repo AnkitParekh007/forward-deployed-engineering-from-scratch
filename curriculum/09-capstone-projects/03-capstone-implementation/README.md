@@ -1,4 +1,4 @@
-# Capstone implementation
+# 📘 Capstone implementation
 
 Day 20 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

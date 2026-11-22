@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Can static hosting keep server-side secrets?
 2. What evidence would show your exercise works?

@@ -1,4 +1,4 @@
-# Practice: Continuous integration
+# 🧪 Practice: Continuous integration
 
 A teammate changes the triage classifier.
 
@@ -6,8 +6,8 @@ A teammate changes the triage classifier.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A workflow and passing test log.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

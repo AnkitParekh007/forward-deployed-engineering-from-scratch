@@ -1,4 +1,4 @@
-# Practice: JSON and HTTP
+# 🧪 Practice: JSON and HTTP
 
 A customer application reads order status.
 
@@ -6,8 +6,8 @@ A customer application reads order status.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A 200 response and parsed record.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

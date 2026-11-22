@@ -1,8 +1,8 @@
-# Career preparation
+# 💼 Career preparation
 
 Practice explaining a customer workflow, trade-offs, evaluation, incident response and release decisions. Prepare a portfolio walkthrough supported by real artifacts.
 
-## Mock interview
+## 🎙️ Mock interview
 1. A customer asks for an AI chatbot. How do you discover the actual need?
 2. How would you evaluate a retrieval assistant?
 3. How do you handle a failing integration?

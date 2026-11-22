@@ -1,4 +1,4 @@
-# Continuous integration
+# 📘 Continuous integration
 
 Day 5 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

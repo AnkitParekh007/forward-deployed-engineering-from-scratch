@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Why compare the same test set?
 2. What evidence would show your exercise works?

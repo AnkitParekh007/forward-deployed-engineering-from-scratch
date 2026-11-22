@@ -1,4 +1,4 @@
-# How language models work
+# 📘 How language models work
 
 Day 8 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

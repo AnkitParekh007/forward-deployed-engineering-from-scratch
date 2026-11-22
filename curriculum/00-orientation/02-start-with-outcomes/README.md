@@ -1,4 +1,4 @@
-# Start with outcomes
+# 📘 Start with outcomes
 
 Day 1 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

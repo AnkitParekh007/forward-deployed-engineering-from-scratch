@@ -1,4 +1,4 @@
-# SQL and persistence
+# 📘 SQL and persistence
 
 Day 5 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

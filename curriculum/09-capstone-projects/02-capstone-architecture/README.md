@@ -1,4 +1,4 @@
-# Capstone architecture
+# 📘 Capstone architecture
 
 Day 20 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,4 +1,4 @@
-# Scope and prioritization
+# 📘 Scope and prioritization
 
 Day 7 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,4 +1,4 @@
-# AI guardrails and oversight
+# 📘 AI guardrails and oversight
 
 Day 17 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

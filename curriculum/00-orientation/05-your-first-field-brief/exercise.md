@@ -1,4 +1,4 @@
-# Practice: Your first field brief
+# 🧪 Practice: Your first field brief
 
 The support manager wants an immediate improvement.
 
@@ -6,8 +6,8 @@ The support manager wants an immediate improvement.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A one-page brief with a decision request.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

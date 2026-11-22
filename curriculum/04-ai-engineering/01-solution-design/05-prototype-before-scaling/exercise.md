@@ -1,4 +1,4 @@
-# Practice: Prototype before scaling
+# 🧪 Practice: Prototype before scaling
 
 A product lead needs themes from 20 comments.
 
@@ -6,8 +6,8 @@ A product lead needs themes from 20 comments.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A baseline output and review notes.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

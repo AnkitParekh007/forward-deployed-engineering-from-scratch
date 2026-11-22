@@ -1,4 +1,4 @@
-# Zero to FDE curriculum
+# 🧭 Zero to FDE curriculum
 
 21-day guided core · 60 lessons · 20 hours of lesson time. Allow additional time for complete portfolio projects. Start at phase 1 and follow the order below.
 

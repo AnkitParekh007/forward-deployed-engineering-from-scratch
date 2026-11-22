@@ -1,4 +1,4 @@
-# Python essentials
+# 📘 Python essentials
 
 Day 3 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

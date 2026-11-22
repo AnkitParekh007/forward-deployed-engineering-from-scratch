@@ -1,4 +1,4 @@
-# Practice: Prompt instructions and context
+# 🧪 Practice: Prompt instructions and context
 
 A ticket classifier confuses priority and sentiment.
 
@@ -6,8 +6,8 @@ A ticket classifier confuses priority and sentiment.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Outputs and error categories.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

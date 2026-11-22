@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. Why ask for a recent example?
 2. What evidence would show your exercise works?

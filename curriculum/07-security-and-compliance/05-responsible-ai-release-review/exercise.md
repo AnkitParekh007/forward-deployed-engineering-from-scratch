@@ -1,4 +1,4 @@
-# Practice: Responsible AI release review
+# 🧪 Practice: Responsible AI release review
 
 A pilot serves several customer teams.
 
@@ -6,8 +6,8 @@ A pilot serves several customer teams.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A documented go/no-go review.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

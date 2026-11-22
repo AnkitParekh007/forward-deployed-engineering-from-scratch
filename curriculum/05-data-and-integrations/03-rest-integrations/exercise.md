@@ -1,4 +1,4 @@
-# Practice: REST integrations
+# 🧪 Practice: REST integrations
 
 A CRM service occasionally times out.
 
@@ -6,8 +6,8 @@ A CRM service occasionally times out.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A simulated timeout test and recovery log.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

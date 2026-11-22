@@ -1,4 +1,4 @@
-# Your first field brief
+# 📘 Your first field brief
 
 Day 2 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,4 +1,4 @@
-# Design the AI application
+# 📘 Design the AI application
 
 Day 9 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

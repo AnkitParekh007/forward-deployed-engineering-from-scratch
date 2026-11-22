@@ -1,8 +1,8 @@
-# Mini-project: Internal knowledge assistant
+# 🛠️ Mini-project: Internal knowledge assistant
 
 Use the five lesson deliverables in this phase. Combine them into a single README with a customer brief, steps, evidence, limitations, and next decision.
 
-## Acceptance
+## ✅ Acceptance
 - Outputs and error categories.
 - Valid response accepted, malformed response rejected.
 - The first pair ranks above the orthogonal pair.

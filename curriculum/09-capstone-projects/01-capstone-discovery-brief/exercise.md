@@ -1,4 +1,4 @@
-# Practice: Capstone discovery brief
+# 🧪 Practice: Capstone discovery brief
 
 A fictional manufacturer needs onboarding assistance.
 
@@ -6,8 +6,8 @@ A fictional manufacturer needs onboarding assistance.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A signed-off simulated brief and measurable tests.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

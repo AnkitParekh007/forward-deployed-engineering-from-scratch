@@ -1,4 +1,4 @@
-# Reliability and degradation
+# 📘 Reliability and degradation
 
 Day 16 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

@@ -1,4 +1,4 @@
-# Secrets and configuration
+# 📘 Secrets and configuration
 
 Day 17 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

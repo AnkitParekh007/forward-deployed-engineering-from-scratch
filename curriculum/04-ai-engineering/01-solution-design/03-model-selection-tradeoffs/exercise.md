@@ -1,4 +1,4 @@
-# Practice: Model selection tradeoffs
+# 🧪 Practice: Model selection tradeoffs
 
 A retailer needs fast category suggestions.
 
@@ -6,8 +6,8 @@ A retailer needs fast category suggestions.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A transparent decision matrix.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

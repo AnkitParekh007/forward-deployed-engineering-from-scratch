@@ -1,8 +1,8 @@
-# Zero to FDE: evidence-driven professional journey
+# 🧭 Zero to FDE: evidence-driven professional journey
 
 The existing 21-day curriculum is the foundation, not a promise of mastery. Learners choose an experience track, complete evidence milestones, and extend their skills using twelve professional modules. A beginner may need months of independent practice; an experienced engineer can use the diagnostic to prioritize gaps.
 
-## Choose your path
+## 🎓 Choose your path
 
 | Track | Starting priority |
 |---|---|
@@ -14,7 +14,7 @@ The existing 21-day curriculum is the foundation, not a promise of mastery. Lear
 
 Experience only changes recommendations; no lesson is silently marked complete. Evidence remains self-reported, not certification.
 
-## Six milestones and proof
+## 🏁 Six milestones and proof
 
 | Milestone | Core phases | Evidence |
 |---|---|---|
@@ -25,7 +25,7 @@ Experience only changes recommendations; no lesson is silently marked complete. 
 | Make delivery dependable | 9–10 | Deployment diagram, trace, runbook and release checklist |
 | Deliver and defend outcomes | 11–12 | Demo, case study, measured evidence and retrospective |
 
-## Professional depth
+## 🧠 Professional depth
 
 | Module | Required portfolio evidence |
 |---|---|
@@ -44,11 +44,11 @@ Experience only changes recommendations; no lesson is silently marked complete. 
 
 Read the interactive [journey](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/journey/) and [professional modules](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/journey/pro/) for detailed concepts, synthetic worked examples, exercises, references and artifact notes. The [field lab](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/journey/field-lab/) offers decision scenarios, a 45-minute optional practice timer and exportable interview stories.
 
-## Runnable professional lab
+## 🧪 Runnable professional lab
 
 Run `python3 curriculum/assets/pro_lab.py` from the repository root. The lab demonstrates Recall@K, reciprocal rank, hypothetical token cost, pass rate, p95 latency and cost per successful task using two synthetic cases. Extend the fixtures to at least 20 cases and compare two configurations; document limitations and failures before suggesting a release.
 
-## Learning rhythm
+## 📅 Learning rhythm
 
 1. Choose the smallest outcome for this week.
 2. Study the prerequisite core lessons and the relevant professional module.
@@ -58,7 +58,7 @@ Run `python3 curriculum/assets/pro_lab.py` from the repository root. The lab dem
 
 Do not submit customer data, secrets or material covered by an NDA. Label simulated evidence accurately. Track progress locally and export evidence as Markdown.
 
-## Independent references and attribution
+## 📚 Independent references and attribution
 
 - [mchittineni/fde-from-scratch](https://github.com/mchittineni/fde-from-scratch), MIT license: inspiration for experience-based learning routes, practical checkpoints and practice-workspace design.
 - [Amie-dev/Forward-Deployed-Engineer](https://github.com/Amie-dev/Forward-Deployed-Engineer): external reference for conceptual depth and lecture organization. No standalone license was located during this review; no notes, code, diagrams or slide content are copied.

@@ -1,4 +1,4 @@
-# Technical communication
+# 📘 Technical communication
 
 Day 18 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

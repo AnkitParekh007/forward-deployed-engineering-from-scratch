@@ -1,4 +1,4 @@
-# Deployment foundations
+# 📘 Deployment foundations
 
 Day 15 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

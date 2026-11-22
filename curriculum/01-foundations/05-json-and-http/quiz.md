@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. What does HTTP 404 mean?
 2. What evidence would show your exercise works?

@@ -1,4 +1,4 @@
-# Practice: What does an FDE do?
+# 🧪 Practice: What does an FDE do?
 
 A retailer asks for an AI chatbot but its actual bottleneck is stock lookup.
 
@@ -6,8 +6,8 @@ A retailer asks for an AI chatbot but its actual bottleneck is stock lookup.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A named user and measurable outcome, not a preferred technology.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

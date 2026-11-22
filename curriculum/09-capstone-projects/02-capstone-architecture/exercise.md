@@ -1,4 +1,4 @@
-# Practice: Capstone architecture
+# 🧪 Practice: Capstone architecture
 
 A pilot requires onboarding checklist generation.
 
@@ -6,8 +6,8 @@ A pilot requires onboarding checklist generation.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Architecture and three trade-offs.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

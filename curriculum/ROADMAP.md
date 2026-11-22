@@ -1,4 +1,4 @@
-# 21-day roadmap
+# 🧭 21-day roadmap
 
 | Day | Lessons | Minutes |
 |---|---|---:|

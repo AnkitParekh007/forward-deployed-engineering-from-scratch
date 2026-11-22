@@ -1,4 +1,4 @@
-# Authentication and authorization
+# 📘 Authentication and authorization
 
 Day 17 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

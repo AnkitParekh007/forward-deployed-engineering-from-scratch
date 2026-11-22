@@ -1,4 +1,4 @@
-# Practice: SQL and persistence
+# 🧪 Practice: SQL and persistence
 
 A team tracks customer tasks.
 
@@ -6,8 +6,8 @@ A team tracks customer tasks.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A reproducible query and result.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

@@ -1,4 +1,4 @@
-# Model Context Protocol
+# 📘 Model Context Protocol
 
 Day 13 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

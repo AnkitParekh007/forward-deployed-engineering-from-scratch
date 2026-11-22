@@ -1,4 +1,4 @@
-# Handoff and customer onboarding
+# 📘 Handoff and customer onboarding
 
 Day 19 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

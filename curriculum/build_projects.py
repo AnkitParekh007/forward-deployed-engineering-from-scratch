@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+from doc_icons import decorate_markdown
 ROOT=Path(__file__).resolve().parent
 PROJECTS=[
 ('Customer Issue Triage Assistant','Support manager','Route incoming tickets to the right queue','category accuracy >= 80% on 10 labeled synthetic tickets','ticket text','category, priority and suggested action','classify with explicit keyword rules; unknown cases go to review','Compare predicted category to the labeled fixture; test empty input.'),
@@ -28,4 +29,7 @@ print(json.dumps(DEMOS[{i-1}](),indent=2))
 ''',encoding='utf-8')
     (code/'README.md').write_text('# Offline starter\n\nFrom this directory run `python3 demo.py`. Inspect the output and extend the baseline to satisfy the project test plan. No model credentials or network services are needed.\n',encoding='utf-8')
     path.write_text(path.read_text(encoding='utf-8')+'\n## Runnable starter\n\nSee [offline starter](code/README.md). Run `python3 code/demo.py` from the project folder. Extend this baseline; it is not a production application.\n',encoding='utf-8')
+    path.write_text(decorate_markdown(path.read_text(encoding='utf-8')), encoding='utf-8')
+    starter = code/'README.md'
+    starter.write_text(decorate_markdown(starter.read_text(encoding='utf-8')), encoding='utf-8')
 (ROOT.parent/'website/src/projects.json').write_text(json.dumps(items,indent=2),encoding='utf-8')

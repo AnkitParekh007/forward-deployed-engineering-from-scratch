@@ -1,4 +1,4 @@
-# Practice: Structured outputs
+# 🧪 Practice: Structured outputs
 
 An onboarding assistant extracts dates and owners.
 
@@ -6,8 +6,8 @@ An onboarding assistant extracts dates and owners.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Valid response accepted, malformed response rejected.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

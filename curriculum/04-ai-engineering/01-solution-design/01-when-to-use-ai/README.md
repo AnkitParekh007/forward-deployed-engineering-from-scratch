@@ -1,4 +1,4 @@
-# When to use AI
+# 📘 When to use AI
 
 Day 8 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

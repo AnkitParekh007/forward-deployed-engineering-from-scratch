@@ -1,4 +1,4 @@
-# Practice: Build a simple UI
+# 🧪 Practice: Build a simple UI
 
 An operator needs a ticket queue.
 
@@ -6,8 +6,8 @@ An operator needs a ticket queue.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A usable keyboard-accessible screen.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

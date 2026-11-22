@@ -1,4 +1,4 @@
-# Practice: Demo storytelling
+# 🧪 Practice: Demo storytelling
 
 A customer has five minutes to review a pilot.
 
@@ -6,8 +6,8 @@ A customer has five minutes to review a pilot.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A script and demo evidence.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

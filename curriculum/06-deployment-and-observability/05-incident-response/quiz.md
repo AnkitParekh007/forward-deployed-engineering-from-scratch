@@ -1,4 +1,4 @@
-# Check your understanding
+# 🧪 Check your understanding
 
 1. What should a first customer update contain?
 2. What evidence would show your exercise works?

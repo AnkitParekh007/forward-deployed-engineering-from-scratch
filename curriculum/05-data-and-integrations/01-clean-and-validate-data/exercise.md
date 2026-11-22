@@ -1,4 +1,4 @@
-# Practice: Clean and validate data
+# 🧪 Practice: Clean and validate data
 
 A CRM export contains blank emails.
 
@@ -6,8 +6,8 @@ A CRM export contains blank emails.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 Accepted and rejected row counts reconcile.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

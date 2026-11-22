@@ -1,4 +1,4 @@
-# Practice: Deployment foundations
+# 🧪 Practice: Deployment foundations
 
 A customer wants a demo URL.
 
@@ -6,8 +6,8 @@ A customer wants a demo URL.
 2. Record inputs and outputs.
 3. Try a boundary case.
 
-## Acceptance
+## ✅ Acceptance
 A local build and deployment checklist.
 
-## Submission
+## 📤 Submission
 Save your work and a brief explanation of any limitations.

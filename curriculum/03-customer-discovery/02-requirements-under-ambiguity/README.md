@@ -1,4 +1,4 @@
-# Requirements under ambiguity
+# 📘 Requirements under ambiguity
 
 Day 6 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

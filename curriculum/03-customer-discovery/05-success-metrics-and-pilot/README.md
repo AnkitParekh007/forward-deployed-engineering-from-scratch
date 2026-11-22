@@ -1,4 +1,4 @@
-# Success metrics and pilot
+# 📘 Success metrics and pilot
 
 Day 7 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

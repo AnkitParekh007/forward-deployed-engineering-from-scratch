@@ -1,4 +1,4 @@
-# Build a simple UI
+# 📘 Build a simple UI
 
 Day 4 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

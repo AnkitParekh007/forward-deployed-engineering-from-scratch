@@ -1,4 +1,4 @@
-# Clean and validate data
+# 📘 Clean and validate data
 
 Day 9 · 20 minutes · [Lesson](lesson.md) · [Exercise](exercise.md) · [Quiz](quiz.md)
 

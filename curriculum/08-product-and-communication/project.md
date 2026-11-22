@@ -1,8 +1,8 @@
-# Mini-project: Product feedback analyzer
+# 🛠️ Mini-project: Product feedback analyzer
 
 Use the five lesson deliverables in this phase. Combine them into a single README with a customer brief, steps, evidence, limitations, and next decision.
 
-## Acceptance
+## ✅ Acceptance
 - Two audience-specific messages.
 - A script and demo evidence.
 - A feedback-to-change decision record.
