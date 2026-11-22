@@ -35,7 +35,7 @@ for file in dist.rglob('index.html'):
     assert page.title and page.canonical, (route, 'Missing metadata')
     pages[route] = page
 
-assert len(pages) == 77, len(pages)
+assert len(pages) == 81, len(pages)
 for route, page in pages.items():
     for href in page.links:
         url = urlsplit(href)
