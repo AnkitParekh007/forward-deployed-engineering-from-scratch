@@ -27,3 +27,14 @@ test('responsive navigation and overflow',async({page})=>{
  await page.setViewportSize({width:320,height:812});await page.goto(base);await page.getByRole('button',{name:'Open navigation menu'}).click();await expect(page.getByRole('navigation',{name:'Mobile navigation'})).toBeVisible();await page.keyboard.press('Escape');await expect(page.getByRole('navigation',{name:'Mobile navigation'})).not.toBeVisible();
 });
 test('static metadata and independently readable page',async({request})=>{const response=await request.get(base+'curriculum/what-does-an-fde-do/');expect(response.ok()).toBeTruthy();const html=await response.text();expect(html).toContain('What does an FDE do? | Zero to FDE');expect(html).toContain('Why this matters');expect(html).toContain('rel="canonical"');expect((await request.get(base+'sitemap.xml')).ok()).toBeTruthy()});
+
+test('support card links to the maintainer and fits mobile in both themes',async({page})=>{
+ await page.setViewportSize({width:320,height:812});await page.goto(base);
+ for(const theme of ['light','dark']){
+  if(await page.locator('html').getAttribute('data-theme')!==theme)await page.getByRole('button',{name:/Toggle theme/}).click();
+  const support=page.getByRole('region',{name:'Keep learning free and open.'});await expect(support).toBeVisible();
+  await expect(support.getByRole('link',{name:'Buy me a coffee'})).toHaveAttribute('href','https://buymeacoffee.com/ankitparekh');
+  await expect(support.getByRole('link',{name:'GitHub Sponsors'})).toHaveAttribute('href','https://github.com/sponsors/AnkitParekh007');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(320);
+ }
+});

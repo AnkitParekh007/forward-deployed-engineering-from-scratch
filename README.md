@@ -234,6 +234,15 @@ This guide is designed to grow with the community. You do not need to be an FDE 
 
 Read the [contribution guide](CONTRIBUTING.md) and [code of conduct](CODE_OF_CONDUCT.md). Keep contributions original, accessible, reproducible and using synthetic data.
 
+## 💜 Support Zero to FDE
+
+Zero to FDE is free and open source. If this guide helps you, you can support the creation of new lessons, practical projects and maintenance. Contributions are entirely optional.
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000)](https://buymeacoffee.com/ankitparekh)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-24212C?style=for-the-badge&logo=githubsponsors&logoColor=EA4AAA)](https://github.com/sponsors/AnkitParekh007)
+
+You can also support the project for free by starring, sharing or contributing.
+
 ## 📚 References and license
 
 Zero to FDE is independently authored. The [professional path](curriculum/PROFESSIONAL_PATH.md) credits external curriculum inspiration; third-party references retain their original terms. The [resource library](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/resources/) links to official tools and documentation.
