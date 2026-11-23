@@ -10,7 +10,7 @@ test('learning progress, bookmarks, deep links, filters and theme',async({page})
  await page.goto(base+'curriculum/');await page.getByRole('searchbox',{name:'Search lessons'}).fill('retrieval');await expect(page.locator('a[href$="/curriculum/retrieval-augmented-generation/"]')).toBeVisible();
  await page.getByRole('searchbox',{name:'Search lessons'}).fill('zz-no-match');await expect(page.getByRole('heading',{name:'No matching lessons'})).toBeVisible();
  await page.goto(base+'#/lesson/01-01');await expect(page.getByRole('heading',{name:'What does an FDE do?',level:1})).toBeVisible();await expect(page).toHaveURL(/curriculum\/what-does-an-fde-do\/$/);
- await page.getByRole('button',{name:/Toggle theme/}).click();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
+ await page.getByRole('button',{name:'Dark theme'}).click();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
 });
 test('search keyboard navigation and skip link',async({page})=>{
  await page.goto(base);await page.getByRole('link',{name:'Skip to content'}).focus();await page.keyboard.press('Enter');await expect(page.locator('main')).toBeFocused();await expect(page).toHaveURL(base);
@@ -31,7 +31,7 @@ test('static metadata and independently readable page',async({request})=>{const 
 test('support card links to the maintainer and fits mobile in both themes',async({page})=>{
  await page.setViewportSize({width:320,height:812});await page.goto(base);
  for(const theme of ['light','dark']){
-  if(await page.locator('html').getAttribute('data-theme')!==theme)await page.getByRole('button',{name:/Toggle theme/}).click();
+  await page.getByRole('button',{name:theme==='light'?'Light theme':'Dark theme'}).click();
   const support=page.getByRole('region',{name:'Keep learning free and open.'});await expect(support).toBeVisible();
   await expect(support.getByRole('link',{name:'Buy me a coffee'})).toHaveAttribute('href','https://buymeacoffee.com/ankitparekh');
   await expect(support.getByRole('link',{name:'GitHub Sponsors'})).toHaveAttribute('href','https://github.com/sponsors/AnkitParekh007');

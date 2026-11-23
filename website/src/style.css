@@ -44,3 +44,23 @@
 .theme-option svg{width:18px;height:18px;display:block}
 @media(max-width:767px){.theme-switch{gap:0;padding:2px}.theme-option{width:30px;height:30px;min-width:30px}.theme-option svg{width:16px;height:16px}}
 @media(prefers-reduced-motion:reduce){.theme-option{transition:none}}
+
+/* Compact icon-only header controls at phone widths, without hiding search/navigation access. */
+.header-mobile-icon{display:none;width:19px;height:19px;flex:none}
+@media(max-width:767px){
+ .header-mobile-icon{display:block}
+ .header-search-label,.header-menu-label{display:none}
+ .header-inner{padding-left:10px;padding-right:10px;gap:4px}
+ .header-actions{gap:2px;min-width:0}
+ .header-actions .search-trigger,.header-actions .menu-trigger{width:34px;height:36px;min-width:34px;min-height:36px;padding:0;justify-content:center}
+ .brand{min-width:0}
+}
+@media(max-width:370px){
+ .brand{font-size:.78rem;gap:3px}
+ .brand img{width:24px;height:24px}
+ .header-inner{padding-left:8px;padding-right:8px;gap:2px}
+ .header-actions{gap:1px}
+ .header-actions .search-trigger,.header-actions .menu-trigger{width:30px;min-width:30px}
+ .theme-switch{padding:2px;gap:0}
+ .theme-option{width:28px;min-width:28px;height:30px}
+}
