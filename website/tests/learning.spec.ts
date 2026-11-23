@@ -86,3 +86,25 @@ test('modern card system preserves links, selection, mobile width and reduced mo
    }
  }
 });
+
+test('AI engineering footer navigation, accessibility, and mobile layout',async({page})=>{
+ test.setTimeout(90000);
+ for(const width of [320,375,768,1280]){
+  await page.setViewportSize({width,height:812});
+  await page.goto(base);
+  const footer=page.locator('footer.site-footer');
+  await expect(footer.getByRole('heading',{name:/Engineer what happens next/})).toBeVisible();
+  await expect(footer.getByRole('navigation',{name:'Learning links'}).getByRole('link',{name:'Curriculum'})).toHaveAttribute('href',/curriculum/);
+  await expect(footer.getByRole('navigation',{name:'Build and practice links'}).getByRole('link',{name:'Portfolio projects'})).toHaveAttribute('href',/projects/);
+  await expect(footer.getByRole('navigation',{name:'Community links'}).getByRole('link',{name:'GitHub repository'})).toHaveAttribute('href','https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+ }
+ await page.setViewportSize({width:1280,height:800});
+ await page.goto(base);
+ await page.getByRole('link',{name:'Back to top'}).click();
+ await expect.poll(()=>page.evaluate(()=>scrollY)).toBe(0);
+ await page.emulateMedia({reducedMotion:'reduce'});
+ const footerLink=page.locator('footer.site-footer .footer-nav a').first();
+ await footerLink.hover();
+ await expect.poll(()=>footerLink.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
+});

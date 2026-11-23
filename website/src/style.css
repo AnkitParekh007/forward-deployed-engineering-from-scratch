@@ -143,3 +143,59 @@
  .card:has(a,button),.card::before,.field-preview::before,.support-card::before,.card-action>span,.card-orbit,.steps article,.phase-overview a{transition:none!important;animation:none!important}
  .card:has(a,button):hover,.steps article:hover,.phase-overview a:hover,.card-action>span,.project-card:hover .card-orbit{transform:none!important}
 }
+
+/* AI-native editorial footer: layered signal grid, clean reading hierarchy, tactile actions. */
+.site-footer{position:relative;display:block;max-width:none;width:100%;margin:0;padding:0;border:0;overflow:hidden;background:var(--color-surface);isolation:isolate}
+.site-footer::before{content:"";position:absolute;inset:0 0 auto;height:530px;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 55% 60% at 80% 7%,var(--card-glow-strong),transparent 78%),linear-gradient(to right,var(--card-edge) 1px,transparent 1px),linear-gradient(to bottom,var(--card-edge) 1px,transparent 1px);background-size:auto,52px 52px,52px 52px;mask-image:linear-gradient(to bottom,black,transparent 94%);opacity:.68}
+.site-footer .footer-shell{position:relative;max-width:1200px;margin:auto;padding:0 var(--gutter)}
+.site-footer .footer-topline{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:23px 0;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);font-family:var(--font-code);font-size:.67rem;font-weight:700;letter-spacing:.09em;color:var(--color-text-muted)}
+.footer-topline>span:first-child{display:flex;align-items:center;gap:10px}
+.footer-signal{display:inline-block;width:8px;height:8px;flex:none;border-radius:50%;background:var(--color-success);box-shadow:0 0 0 4px color-mix(in srgb,var(--color-success) 16%,transparent)}
+.footer-coordinate{color:var(--color-accent)}
+.site-footer .footer-intro{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(290px,.7fr);gap:clamp(28px,5vw,76px);align-items:center;padding:clamp(48px,6vw,84px) 0}
+.footer-pitch{min-width:0}
+.footer-eyebrow,.footer-cta-kicker,.footer-identity-note{font-family:var(--font-code);font-size:.69rem;font-weight:700;letter-spacing:.1em;color:var(--color-accent)}
+.footer-pitch h2{font-size:clamp(2.2rem,4.2vw,4rem);letter-spacing:-.06em;line-height:1.1;max-width:17ch;margin:16px 0 22px}
+.footer-pitch h2 span{display:block;color:var(--color-accent)}
+.footer-pitch p{font-size:clamp(.98rem,1.4vw,1.1rem);line-height:1.75;max-width:60ch;margin:0}
+.footer-cta{display:grid;align-content:start;gap:12px;padding:clamp(22px,2.6vw,32px);border:1px solid var(--card-edge);border-radius:20px;background:linear-gradient(145deg,var(--color-surface),var(--color-surface-elevated));box-shadow:var(--card-shadow);min-width:0}
+.footer-cta strong{font-size:clamp(1.15rem,1.75vw,1.5rem);line-height:1.4;letter-spacing:-.025em;margin:0 0 8px}
+.site-footer .footer-cta a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-radius:12px;min-height:48px;font-weight:740;font-size:.87rem;text-decoration:none;transition:transform 240ms var(--card-motion),background-color 240ms ease,box-shadow 240ms ease}
+.footer-cta-primary{background:var(--color-primary);color:var(--color-on-primary)}
+.footer-cta-primary:hover{background:var(--color-primary-hover);color:var(--color-on-primary)}
+.footer-cta-secondary{background:var(--color-surface);color:var(--color-text);border:1px solid var(--color-border)}
+.footer-cta-secondary:hover{color:var(--color-primary);border-color:var(--color-primary)}
+.footer-cta a span{font-size:1.12rem}
+.site-footer .footer-grid{display:grid;grid-template-columns:minmax(230px,1.7fr) repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,40px);padding:42px 0 48px;border-top:1px solid var(--color-border)}
+.footer-identity{min-width:0;padding-right:16px}
+.footer-logo{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:var(--color-text);font-size:1.16rem;font-weight:800;letter-spacing:-.04em;min-height:44px}
+.footer-logo img{width:34px;height:34px}
+.footer-identity p{max-width:32ch;font-size:.91rem;line-height:1.75;margin:12px 0 18px}
+.footer-identity-note{display:block;font-size:.62rem}
+.site-footer .footer-nav{display:flex;flex-direction:column;align-items:flex-start;gap:9px;min-width:0}
+.footer-nav h3{font-size:.77rem;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text);margin:0 0 11px}
+.site-footer .footer-nav a{display:inline-flex;align-items:center;min-height:36px;max-width:100%;font-size:.91rem;font-weight:500;text-decoration:none;color:var(--color-text-secondary);line-height:1.45;transition:color 180ms ease,transform 220ms var(--card-motion)}
+.site-footer .footer-nav a:hover{color:var(--color-primary)}
+.site-footer .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px 28px;padding:21px 0 28px;border-top:1px solid var(--color-border);font-size:.76rem;color:var(--color-text-muted)}
+.footer-bottom a{color:var(--color-text-secondary);text-underline-offset:3px}
+.footer-top-link{font-size:.76rem;text-decoration:none;font-weight:700}
+@media(hover:hover) and (pointer:fine){
+ .site-footer .footer-cta a:hover{transform:translateY(-2px);box-shadow:var(--shadow-interactive)}
+ .site-footer .footer-nav a:hover{transform:translateX(3px)}
+}
+@media(max-width:900px){
+ .site-footer .footer-intro{grid-template-columns:1fr}
+ .footer-pitch h2{max-width:22ch}
+ .site-footer .footer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+ .footer-identity{grid-column:1/-1}
+}
+@media(max-width:580px){
+ .site-footer .footer-topline{font-size:.6rem;line-height:1.6}
+ .site-footer .footer-intro{padding:45px 0;gap:27px}
+ .footer-pitch h2{font-size:clamp(2rem,8vw,2.9rem);margin:14px 0}
+ .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 18px;padding:36px 0}
+ .footer-identity{grid-column:1/-1;padding:0}
+ .site-footer .footer-bottom{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:350px){.site-footer .footer-grid{gap:20px 10px}.site-footer .footer-nav a{font-size:.84rem}.footer-cta{padding:18px}}
+@media(prefers-reduced-motion:reduce){.site-footer .footer-cta a,.site-footer .footer-nav a{transition:none!important;transform:none!important}}
