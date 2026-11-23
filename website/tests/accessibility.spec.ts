@@ -16,6 +16,21 @@ test('core pages meet automated WCAG A/AA checks in both themes',async({page})=>
  expect(violations).toEqual([]);
 });
 
+test('search action keeps its accessible name aligned with desktop text and works on mobile',async({page})=>{
+ await page.setViewportSize({width:1280,height:800});
+ await page.goto(base);
+ const desktopSearch=page.getByRole('button',{name:'Search ⌘ K',exact:true});
+ await expect(desktopSearch).toBeVisible();
+ await desktopSearch.click();
+ await expect(page.getByRole('dialog',{name:'Search the field guide'})).toBeVisible();
+ await page.keyboard.press('Escape');
+ await page.setViewportSize({width:320,height:812});
+ await page.goto(base);
+ const mobileSearch=page.getByRole('button',{name:'Search ⌘ K',exact:true});
+ await expect(mobileSearch).toBeVisible();
+ await mobileSearch.click();
+ await expect(page.getByRole('dialog',{name:'Search the field guide'})).toBeVisible();
+});
 test('system mode follows device appearance and explicit modes persist',async({page})=>{
  await page.emulateMedia({colorScheme:'light'});
  await page.goto(base);
