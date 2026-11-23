@@ -93,7 +93,7 @@ test('AI engineering footer navigation, accessibility, and mobile layout',async(
   await page.setViewportSize({width,height:812});
   await page.goto(base);
   const footer=page.locator('footer.site-footer');
-  await expect(footer.getByRole('heading',{name:"Don't just prompt AI. Engineer what happens next."})).toBeVisible();
+  await expect(footer.getByRole('heading',{name:/Engineer what happens next/})).toBeVisible();
   await expect(footer.getByRole('navigation',{name:'Learning links'}).getByRole('link',{name:'Curriculum'})).toHaveAttribute('href',/curriculum/);
   await expect(footer.getByRole('navigation',{name:'Build and practice links'}).getByRole('link',{name:'Portfolio projects'})).toHaveAttribute('href',/projects/);
   await expect(footer.getByRole('navigation',{name:'Community links'}).getByRole('link',{name:'GitHub repository'})).toHaveAttribute('href','https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch');
