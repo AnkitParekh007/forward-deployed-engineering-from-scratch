@@ -64,3 +64,82 @@
  .theme-switch{padding:2px;gap:0}
  .theme-option{width:28px;min-width:28px;height:30px}
 }
+
+/* Modern card language: quiet glassy layers, intentional hierarchy, and one responsive motion system.
+   Existing semantic colors carry both color schemes; no third-party motion dependency. */
+:root{
+ --card-edge:rgb(106 72 178 / 14%);
+ --card-glow:rgb(105 65 165 / 11%);
+ --card-glow-strong:rgb(105 65 165 / 17%);
+ --card-shadow:0 2px 5px rgb(34 16 65 / 4%),0 16px 44px -28px rgb(45 17 100 / 19%);
+ --card-shadow-hover:0 16px 28px -18px rgb(52 18 118 / 26%),0 26px 52px -32px rgb(52 18 118 / 24%);
+ --card-radius:20px;
+ --card-motion:cubic-bezier(.22,1,.36,1);
+}
+:root[data-theme=dark]{
+ --card-edge:rgb(216 185 255 / 14%);
+ --card-glow:rgb(183 137 255 / 10%);
+ --card-glow-strong:rgb(183 137 255 / 17%);
+ --card-shadow:0 10px 28px -18px rgb(0 0 0 / 55%),inset 0 1px 0 rgb(255 255 255 / 3%);
+ --card-shadow-hover:0 25px 50px -24px rgb(0 0 0 / 70%),0 0 30px -20px rgb(196 169 253 / 32%);
+}
+.card,.field-preview,.support-card{
+ position:relative;isolation:isolate;border-radius:var(--card-radius);
+ background:linear-gradient(155deg,var(--color-surface) 12%,var(--color-surface-elevated) 270%);
+ border:1px solid var(--card-edge);box-shadow:var(--card-shadow);
+}
+.card::before,.field-preview::before,.support-card::before{
+ content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;
+ background:radial-gradient(circle at 100% 0%,var(--card-glow),transparent 57%);
+ opacity:.7;transition:opacity 350ms var(--card-motion);
+}
+.card:has(a,button){transition:transform 350ms var(--card-motion),box-shadow 350ms var(--card-motion),border-color 250ms ease,background-color 250ms ease}
+.card:focus-within{border-color:var(--color-primary);box-shadow:var(--card-shadow-hover)}
+.card h2,.card h3{line-height:1.25;letter-spacing:-.028em}
+.card h2 a,.card h3 a{color:var(--color-text)}
+.card h2 a:hover,.card h3 a:hover{color:var(--color-primary)}
+.path-grid,.project-grid,.resource-grid{gap:clamp(14px,2vw,22px);align-items:stretch}
+.path-card,.project-card{display:flex;flex-direction:column;align-items:flex-start;gap:0;padding:clamp(22px,2.6vw,30px);overflow:hidden}
+.card-topline{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-width:0;margin-bottom:18px}
+.card-topline .eyebrow{margin-bottom:0}
+.card-index{font:700 .8rem/1 var(--font-code);color:var(--color-text-muted);letter-spacing:.12em}
+.card-orbit{display:grid;place-items:center;width:34px;height:34px;flex:none;border:1px solid var(--color-border);border-radius:50%;color:var(--color-accent);background:var(--color-surface);font-size:1.1rem;transition:transform 350ms var(--card-motion),background-color 200ms}
+.path-card h3,.project-card h2{margin:0 0 12px;font-size:clamp(1.18rem,1.6vw,1.42rem)}
+.path-card .path-time{font-size:1.05rem;font-weight:700;line-height:1.45;color:var(--color-accent);margin:0 0 15px}
+.card-description{line-height:1.65;color:var(--color-text-secondary);margin:0 0 20px;max-width:54ch}
+.path-card>.badge,.project-card>.badge{margin-bottom:14px}
+.path-card .card-topline .badge,.project-card .badge{border-radius:999px;padding:5px 11px;font-size:.76rem}
+.project-card .badge{margin:0 0 17px}
+.project-metric{display:grid;gap:4px;margin:0 0 22px;padding:13px 15px;width:100%;border-radius:12px;border:1px solid var(--card-edge);background:var(--card-glow);font-size:.86rem;line-height:1.5}
+.project-metric strong{font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;color:var(--color-text-muted)}
+.project-metric span{color:var(--color-text-secondary)}
+.card-action{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;padding:13px 0 0;width:100%;min-height:44px;border-top:1px solid var(--color-border);font-size:.88rem;font-weight:730;color:var(--color-primary);text-decoration:none}
+.card-action>span{display:grid;place-items:center;width:29px;height:29px;border-radius:9px;background:var(--card-glow);transition:transform 350ms var(--card-motion),background-color 250ms ease}
+.card-action:focus-visible{border-radius:6px}
+.field-preview{overflow:hidden}
+.support-card{overflow:hidden}
+.steps article{position:relative;padding:24px;border:1px solid var(--card-edge);border-radius:16px;background:var(--color-surface);box-shadow:var(--card-shadow);min-width:0}
+.steps article::before{content:"";position:absolute;left:24px;right:24px;top:0;height:3px;border-radius:0 0 6px 6px;background:var(--color-accent)}
+.steps .step-number{display:inline-block;margin-bottom:14px}
+.steps article h3{margin-bottom:10px}
+.phase-overview a{padding:16px 18px;min-height:76px;border:1px solid var(--card-edge);border-radius:14px;background:var(--color-surface);box-shadow:var(--shadow-subtle)}
+.phase-overview{gap:12px;margin:var(--s5) 0;border:0}
+.phase-overview a:hover,.phase-overview a:focus-visible{border-color:var(--color-primary);box-shadow:var(--card-shadow-hover)}
+@media(hover:hover) and (pointer:fine){
+ .card:has(a,button):hover{transform:translateY(-7px);border-color:var(--color-primary);box-shadow:var(--card-shadow-hover)}
+ .card:hover::before,.field-preview:hover::before,.support-card:hover::before{opacity:1}
+ .card:hover .card-action>span,.card:focus-within .card-action>span{transform:translate(3px,-3px);background:var(--card-glow-strong)}
+ .project-card:hover .card-orbit{transform:rotate(45deg);background:var(--card-glow)}
+ .steps article{transition:transform 350ms var(--card-motion),box-shadow 350ms var(--card-motion),border-color 250ms ease}
+ .steps article:hover{transform:translateY(-4px);box-shadow:var(--card-shadow-hover);border-color:var(--color-accent)}
+ .phase-overview a:hover{transform:translateY(-2px)}
+}
+@media(max-width:767px){
+ .path-card,.project-card{padding:22px}
+ .steps article{padding:20px}
+ .phase-overview a{padding:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ .card:has(a,button),.card::before,.field-preview::before,.support-card::before,.card-action>span,.card-orbit,.steps article,.phase-overview a{transition:none!important;animation:none!important}
+ .card:has(a,button):hover,.steps article:hover,.phase-overview a:hover,.card-action>span,.project-card:hover .card-orbit{transform:none!important}
+}
