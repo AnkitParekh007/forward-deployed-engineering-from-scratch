@@ -8,3 +8,37 @@
 @media(max-width:1023px){.journey-banner{grid-template-columns:1fr}.journey-map{grid-template-columns:repeat(3,minmax(0,1fr))}.journey-map a:nth-child(3)::after{display:none}.track-grid,.pro-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:767px){.journey-banner{padding:12px;gap:16px}.journey-banner>div{padding:8px}.journey-status{padding:16px}.track-grid,.pro-index{grid-template-columns:1fr}.journey-map{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px}.journey-map a::after{display:none}.milestone-card{grid-template-columns:1fr;padding:16px}.pro-card{padding:16px}.journey-banner h1{font-size:2.15rem}.journey-banner .button{width:100%}}
 @media(prefers-reduced-motion:reduce){.track-card{transition:none}}
+
+/* Journey cards inherit the same dimensional language as curriculum and project cards. */
+.journey-status,.track-card,.milestone-card,.pro-card,.diagnostic-question{
+ position:relative;border:1px solid var(--card-edge);border-radius:var(--card-radius);
+ background:linear-gradient(155deg,var(--color-surface),var(--color-surface-elevated) 290%);
+ box-shadow:var(--card-shadow);min-width:0;
+}
+.journey-status,.milestone-card,.pro-card{overflow:hidden}
+.journey-status::before,.milestone-card::before,.pro-card::before{
+ content:"";position:absolute;left:0;top:0;width:100%;height:3px;
+ background:linear-gradient(90deg,var(--color-accent),transparent 75%);pointer-events:none;
+}
+.track-card{padding:22px;gap:10px;overflow:hidden;min-height:220px;transition:transform 350ms var(--card-motion),box-shadow 350ms var(--card-motion),border-color 250ms ease}
+.track-card::after{content:"";position:absolute;right:-42px;top:-42px;width:120px;height:120px;border-radius:50%;border:1px solid var(--card-edge);background:radial-gradient(circle,var(--card-glow),transparent 72%);pointer-events:none}
+.track-card strong{font-size:clamp(1.1rem,1.4vw,1.3rem);line-height:1.3;letter-spacing:-.02em}
+.track-card .track-marker{margin-top:auto;padding-top:16px;font-weight:750}
+.track-card.chosen{padding:22px;border:2px solid var(--color-primary);box-shadow:var(--card-shadow-hover)}
+.track-card.chosen .track-marker{color:var(--color-primary)}
+.track-card:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}
+.milestone-card{gap:20px;padding:clamp(20px,3vw,30px)}
+.milestone-card h3{letter-spacing:-.035em}
+.pro-card{padding:clamp(20px,3vw,30px)}
+.diagnostic-question{padding:clamp(16px,2.5vw,24px)}
+.journey-map{border-color:var(--card-edge);border-radius:var(--card-radius);box-shadow:var(--card-shadow)}
+@media(hover:hover) and (pointer:fine){
+ .track-card:not(:disabled):hover{transform:translateY(-6px);border-color:var(--color-primary);background:var(--color-surface);box-shadow:var(--card-shadow-hover)}
+ .milestone-card,.pro-card,.diagnostic-question,.journey-status{transition:border-color 250ms ease,box-shadow 350ms var(--card-motion)}
+ .milestone-card:hover,.pro-card:hover,.diagnostic-question:hover,.journey-status:hover{border-color:var(--color-accent);box-shadow:var(--card-shadow-hover)}
+}
+@media(max-width:767px){.track-card{min-height:0;padding:20px}.track-card.chosen{padding:20px}.milestone-card{padding:18px}.pro-card{padding:20px}}
+@media(prefers-reduced-motion:reduce){
+ .track-card,.milestone-card,.pro-card,.diagnostic-question,.journey-status{transition:none!important}
+ .track-card:hover{transform:none!important}
+}
