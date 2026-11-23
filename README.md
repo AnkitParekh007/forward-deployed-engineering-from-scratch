@@ -16,7 +16,9 @@ Learn to turn ambiguous customer problems into working, tested, observable AI-en
 [![Projects](https://img.shields.io/badge/Portfolio_projects-7-7C3AED)](curriculum/09-capstone-projects/portfolio/)
 [![Deploy Zero to FDE](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/actions/workflows/deploy-website.yml)
 
-**[🚀 Start learning](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/start/) · [🧭 Your FDE journey](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/journey/) · [🛠️ Explore projects](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/projects/)**
+**[🚀 Start learning](https://ankitparekh007.github.io/forward-deployed-engineering-from-scratch/start/) · [🛠️ Run a sample project](curriculum/09-capstone-projects/portfolio/customer-issue-triage-assistant/README.md) · [⭐ Star on GitHub](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/stargazers) · [🤝 Contribute](CONTRIBUTING.md)**
+
+If this free guide helps you, **[star the repository](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch)** to make it easier for others to discover. Want to improve it? See [beginner-friendly issues](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). No star is needed to learn or contribute.
 
 </div>
 
@@ -227,7 +229,7 @@ This guide is designed to grow with the community. You do not need to be an FDE 
 | 🧪 Learning design | Propose a realistic customer scenario or evidence checkpoint |
 | 🎨 Experience | Improve responsive layout, keyboard access or reading flow |
 
-1. [Open or browse issues](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/issues) and describe the learner problem.
+1. [Browse beginner-friendly issues](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) or [all open issues](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/issues). Comment before starting if you want to coordinate or ask a question.
 2. Fork the repository and create a focused branch.
 3. Make your change, run the relevant checks and submit a pull request.
 4. Include what changed, why it matters and how reviewers can verify it.
