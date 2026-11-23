@@ -58,3 +58,31 @@ test('interactive motion responds to hover, focus and reduced motion',async({pag
  await page.emulateMedia({reducedMotion:'reduce'});await cta.hover();await expect.poll(()=>cta.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
  await card.hover();await expect.poll(()=>card.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
 });
+
+test('modern card system preserves links, selection, mobile width and reduced motion',async({page})=>{
+ test.setTimeout(90000);
+ await page.setViewportSize({width:1440,height:900});
+ await page.goto(base);
+ const track=page.locator('.path-grid .path-card').first();
+ await expect(track.locator('.card-action')).toBeVisible();
+ await expect(track.locator('.card-index')).toHaveText('01');
+ await track.hover();
+ await expect.poll(()=>track.evaluate(el=>getComputedStyle(el).transform)).not.toBe('none');
+ const project=page.locator('.project-grid .project-card').first();
+ await expect(project.locator('.project-metric')).toBeVisible();
+ await expect(project.locator('.card-action')).toHaveAttribute('href',/projects\//);
+ await page.goto(base+'journey/');
+ const selector=page.locator('.track-grid .track-card').first();
+ await selector.click();
+ await expect(selector).toHaveAttribute('aria-pressed','true');
+ await page.emulateMedia({reducedMotion:'reduce'});
+ await selector.hover();
+ await expect.poll(()=>selector.evaluate(el=>getComputedStyle(el).transform)).toBe('none');
+ for(const width of [320,375,768]){
+   await page.setViewportSize({width,height:812});
+   for(const route of ['', 'projects/','journey/']){
+     await page.goto(base+route);
+     expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+   }
+ }
+});
