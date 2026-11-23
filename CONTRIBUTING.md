@@ -4,7 +4,8 @@ Thank you for helping make Forward Deployed Engineering more approachable. Contr
 
 ## 🧭 Find a contribution
 
-- Browse [open issues](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/issues).
+- Start with [good first issues](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) or browse [all open issues](https://github.com/AnkitParekh007/forward-deployed-engineering-from-scratch/issues).
+- Comment with your approach or questions before starting; ask the maintainer to clarify scope if needed.
 - Report broken links, confusing prerequisites, inaccessible interactions or incorrect examples.
 - Propose a focused improvement with a clear learning outcome before spending time on a large rewrite.
 - For a new lesson or project, explain the real-world customer problem, proposed deliverable and how learners can verify success.
